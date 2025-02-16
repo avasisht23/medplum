@@ -252,7 +252,7 @@ export type CurrentContext<T extends FhircastAnchorResourceType | '' = FhircastA
       ? {
           'context.type': T;
           'context.versionId': string;
-          context: FhircastEventContext<AnchorResourceOpenEvent<T>>;
+          context: FhircastEventContext<AnchorResourceOpenEvent<T>>[];
         }
       : never;
 
